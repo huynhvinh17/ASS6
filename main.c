@@ -126,5 +126,5 @@ int main(void)
         fprintf(stderr, "%s\n", errorInfo.message);
     }
 
-    return 0;
+
 }
