@@ -1,6 +1,16 @@
+/*******************************************************************************
+ * Definitions
+ ******************************************************************************/
+
+#ifndef _INTELHEX_LIB_
+#define _INTELHEX_LIB_
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+/*******************************************************************************
+ * Prototypes
+ ******************************************************************************/
 
 /**
  * @brief Enumeration of error codes
@@ -71,3 +81,5 @@ int checkChecksum(const char *line);
  * @return int Returns 0 if no errors were encountered, 1 otherwise.
  */
 int processFile(const char *filename, void (*errorCallback)(ErrorCode, ErrorInfo *));
+
+#endif /* _INTELHEX_LIB_ */
